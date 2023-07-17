@@ -1,0 +1,28 @@
+
+body {
+    background-color: lightgray;
+}
+
+
+
+
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: gray;
+}
+
+.box {
+    margin: auto;
+    display: flex;
+    border:black solid 4px;
+    background-color: white;
+    border-color: black;
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-around;
+
+}
