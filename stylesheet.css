@@ -17,12 +17,60 @@ body {
 .box {
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
     border:black solid 4px;
     background-color: white;
     border-color: black;
     width: 600px;
-    height: 600px;
-    align-items: center;
-    justify-content: space-around;
+    height: 600 px;
 
+
+}
+
+.square {
+    background-color: white;
+}
+
+
+
+.buttons {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+button {
+    border: solid black 3px;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.num-grid {
+    background-color: rgb(52, 243, 52);
+}
+
+.start {
+    background-color: rgb(241, 44, 60);
+}
+
+.reset {
+    background-color: cyan;
+}
+
+.num-grid:active {
+    background-color: rgb(32, 150, 32);
+    
+}
+
+.start:active {
+    background-color: rgb(119, 22, 30);
+}
+
+.reset:active {
+    background-color: rgb(1, 139, 139);
 }
