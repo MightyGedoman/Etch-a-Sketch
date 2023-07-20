@@ -58,9 +58,9 @@ button {
     background-color: rgb(241, 44, 60);
 }
 
-.reset {
+/* .reset {
     background-color: cyan;
-}
+} */
 
 .num-grid:active {
     background-color: rgb(32, 150, 32);
@@ -71,6 +71,6 @@ button {
     background-color: rgb(119, 22, 30);
 }
 
-.reset:active {
+/* .reset:active {
     background-color: rgb(1, 139, 139);
-}
+} */

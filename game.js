@@ -5,24 +5,22 @@ const start = document.querySelector('.start')
 const reset = document.querySelector('.reset')
 const numGrid = document.querySelector('.num-grid')
 let divstring = "";
-let grid2 = grid*grid
-let dimentions = 600/grid
-let isclick = false
-let isDrawing = false
-
+let grid2 = grid*grid;
+let dimentions = 600/grid;
+let isDrawing = false;
 
 
 function draw() {
     start.addEventListener("click", () => {
-        isDrawing = !isDrawing;
-        if (isDrawing = true) {
-            color();
-        }
-    });
-    reset.addEventListener('click', () => {
-        resetColor()
+        color();
+        isDrawing = true;
+        })
+
+    /* reset.addEventListener('click', () => {
+        resetColor();
+        isDrawing = false;
     
-    })
+    }) */
     
     numGrid.addEventListener('click', () => {
         updateGrid()
@@ -64,7 +62,7 @@ function color() {
     });
 }
 
-function resetColor() {
+/* function resetColor() {
     const squares = createGrid();
     squares.forEach((square) => {
         square.removeEventListener('mouseover', () => {
@@ -72,7 +70,7 @@ function resetColor() {
         });
         square.style.backgroundColor = '';
     });
-}
+} */
 
 createGrid()
 draw()
