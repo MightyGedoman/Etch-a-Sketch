@@ -15,7 +15,7 @@ let isDrawing = false
 function draw() {
     start.addEventListener("click", () => {
         isDrawing = !isDrawing;
-        if (isDrawing) {
+        if (isDrawing = true) {
             color();
         }
     });
@@ -25,7 +25,7 @@ function draw() {
     })
     
     numGrid.addEventListener('click', () => {
-        updateGrid
+        updateGrid()
     })
 }
 
@@ -46,10 +46,11 @@ function createGrid() {
 
 
 function updateGrid() {
-    let newGrid = parseInt(prompt('Enter the new grid size (minimum: 16):'), 10);
+    let newGrid = parseInt(prompt('Enter the new grid size (minimum: 16):'));
     if (newGrid >= 16) {
       grid = newGrid;
-      dimentions = 600 / grid;
+      grid2 = newGrid * newGrid
+      dimentions = 600 / newGrid
       createGrid();
     }
   }
